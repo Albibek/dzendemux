@@ -1,0 +1,19 @@
+# Main application config
+threads = 4
+# cra pis for testing purpose, checking if is not displayed because it's always absent
+template = "{{clock}} | {{battery}}% | {{unread_mail}}+{{unseen_mail}} {{crap}}"
+
+[watcher.clock]
+type="clock"
+tick = 3000
+
+[watcher.battery]
+type="file"
+filename="/sys/class/power_supply/BAT0/capacity"
+tick = 10000
+
+[watcher.unread_mail]
+tick=60000
+type="file"
+filename="/home/albibek/var/unread_mails"
+

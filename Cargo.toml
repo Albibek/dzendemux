@@ -1,0 +1,20 @@
+[package]
+name = "dzendemux"
+version = "0.2.0"
+authors = ["Albibek <albibek@gmail.com>"]
+
+[dependencies]
+chrono="~0.2"
+toml = "~0.2"
+rustc-serialize="*"
+clippy = {version = "~0.0", optional = true}
+tokio-core="~0.1"
+tokio-timer="~0.1"
+futures="~0.1"
+futures-cpupool="~0.1"
+liquid="~0.9"
+error-chain="~0.8"
+
+[features]
+default = []
+dev = ["clippy"]
