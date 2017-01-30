@@ -2,7 +2,7 @@
 Configurable status bar demultiplexor
 
 Prints to stdout the line of data combined from different watchers, like clock or some file content
-(cuttently only latter two are inplemented).
+(currently only latter two are inplemented).
 
 Configurable through toml-file, allows setting update frequency for each watcher.
 Line format is specified as Liquid template, so this program can be used as a input for any other status bar
