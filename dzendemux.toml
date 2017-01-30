@@ -6,6 +6,7 @@ template = "{{clock}} | {{battery}}% | {{unread_mail}}+{{unseen_mail}} {{crap}}"
 [watcher.clock]
 type="clock"
 tick = 3000
+format="%c"
 
 [watcher.battery]
 type="file"
